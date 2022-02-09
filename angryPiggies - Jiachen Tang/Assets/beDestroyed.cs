@@ -21,7 +21,7 @@ public class beDestroyed : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Be Destroyed");
+        //Debug.Log("Be Destroyed");
         if (collision.gameObject.tag == "Piggie")
         {
             Destroy(gameObject);
