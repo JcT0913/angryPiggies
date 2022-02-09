@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class beDestroyed : MonoBehaviour
 {
+    public scoreCounter score;
+    public float scorePerObject = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class beDestroyed : MonoBehaviour
         if (collision.gameObject.tag == "Piggie")
         {
             Destroy(gameObject);
+            score.scoreCount += scorePerObject;
         }
     }
 }
