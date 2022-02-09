@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Piggie
   - Cannon
+  - Grass
   layers:
   - Default
   - TransparentFX
